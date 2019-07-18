@@ -12,6 +12,34 @@ code {
     monospace;
 }
 
+.bg-rules {
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.z-index {
+  z-index: 9;
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay::after {
+  background-color: rgba(0,0,0,0.6);
+}
+
 #loader {
   display: block;
   position: relative;
