@@ -5,10 +5,16 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '@fancyapps/fancybox/dist/jquery.fancybox.min.css';
 import './assets/css/index.css';
 import './assets/css/App.css';
-import App from './base/App';
+// import App from './base/App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root') as Element);
+import Loadable from 'react-loadable';
+import { LoadingComponent } from './components/Loader';
+
+const AsyncBase = Loadable({loader: () => import("./base/App"), loading: LoadingComponent});
+
+
+ReactDOM.render(<AsyncBase />, document.getElementById('root') as Element);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
