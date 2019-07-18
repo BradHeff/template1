@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import '@fancyapps/fancybox/dist/jquery.fancybox.min.css';
+import './assets/lib/fa/css/all.css';
 import './assets/css/index.css';
 import './assets/css/App.css';
 // import App from './base/App';

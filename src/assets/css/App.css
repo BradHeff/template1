@@ -1,18 +1,83 @@
 .App-header {
-  /* background-color: #282c34; */
-  min-height: 60vh;
+  min-height: 50vh;  
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  color: white;  
 }
 
 .header {
-  background: url(../images/header.jpg);
+  background: url(../images/header.jpg);  
+}
+
+.header h1, .header p {
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .header h1 {
-  font-size: calc(38px + 2vmin);
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.header p {
+  font-size: 18px;
+}
+
+@media(max-width: 991px) {
+  .header h1 {
+    font-size: 40px;
+  }
+  .header p {
+    font-size: 14px;
+  }      
+}
+
+@media(max-width: 768px) {
+  .header h1 {
+    font-size: 30px;
+  }
+  .header p {
+    font-size: 12px;
+  }      
+}
+
+.header h1 span {
+  color: aquamarine;
+}
+
+.cat-area .single-cat {
+  text-align: center;
+}
+
+.cat-area .single-cat p {
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cat-area .hb-sm {
+  line-height: 40px;
+  font-size: 28px;
+}
+
+.cat-area .hb-facebook-inv, .cat-area .hb-facebook-inv::after, .cat-area .hb-facebook-inv::before, .cat-area .hb-facebook:hover, .cat-area .hb-facebook:hover::after, .cat-area .hb-facebook:hover::before {
+  border-color: #A7A7A7;
+  color: #A7A7A7;
+  background: 0 0;
+}
+
+.cat-area .hb-facebook-inv:hover, .cat-area .hb-facebook-inv:hover::after, .cat-area .hb-facebook-inv:hover::before {
+  background-color: #fab700;
+  border-color: #A7A7A7;
+  color: #fff;
 }
