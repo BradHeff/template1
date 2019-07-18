@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import 'aos/dist/aos.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import '@fancyapps/fancybox/dist/jquery.fancybox.min.css';
+import './assets/css/index.css';
+import './assets/css/App.css';
+import App from './base/App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root') as Element);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
